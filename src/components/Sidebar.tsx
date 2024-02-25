@@ -15,8 +15,8 @@ function SidebarItem({ to, Icon, children }: { to: any, Icon: React.ElementType,
         <div className=''>
             <Link href={to}>
                 <span className={cn(
-                    'flex flex-row gap-2 mx-2 px-2 my-1 py-3  hover:rounded-md text-sm rounded-md hover:bg-muted',
-                    pathname === to ? "bg-primary text-primary-foreground hover:bg-primary/90" : ""
+                    'flex flex-row gap-2 mx-3 px-2 my-1 py-3  hover:rounded-md text-sm rounded-md hover:bg-muted',
+                    pathname === to ? "bg-muted" : ""
                 )}>
                     <Icon className='w-5 h-5' />
                     <span className='ml-1 font-semibold'>{children}</span>
